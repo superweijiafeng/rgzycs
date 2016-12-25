@@ -1,0 +1,78 @@
+.catDiv{
+	width: 200px;
+	border-right: 1px dotted #e0e0e0;
+	padding-top: 10px;
+	margin-left: 10px;
+	float: left;
+}
+
+.contentDiv{
+	margin-left: 10px;
+	margin-right: 0px;
+	padding-top: 10px;
+	float: left;
+	width: 775px;
+	
+}
+
+.contentDivTitle{
+	text-align: center;  
+	font-family: 宋体; 
+	font-size: 24px; 
+	font-weight: bold;
+	display: block;
+	width: 775px;
+}
+
+.contentTime{
+	margin-top: 20px;
+}
+
+.catCap{
+	height: 40px;
+	border-bottom: 3px solid #86d4f9;
+}
+
+.catCapInner{
+	background-image: url("../file/image/cap.gif");
+	background-position: left;
+	background-repeat: no-repeat;
+	padding-left: 20px;
+}
+
+.artDiv{
+	width: 230px;
+	margin-top: 10px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.artDiv img{
+	width: 230px;
+}
+
+.artDiv p{
+	font-family: 微软雅黑;
+	font-size: 18px;
+}
+
+.contentTable tr{
+	height: 100px;
+}
+
+.contentTable img{
+	height: 100px;
+}
+
+.contentContent{
+	height: 100px;
+}
+
+.contentImg{
+	width: 200px;
+}
+
+.contentContent a{
+	color: blue;
+}

@@ -1,0 +1,34 @@
+.form {
+	width: 775px; 
+	margin: 0 auto;
+}
+
+
+.modify1 {
+	font-family: 微软雅黑;
+	font-size: 20px;
+}
+
+.modify2 {
+	font-family: 微软雅黑;
+	font-size: 14px;
+}
+
+.form ul {
+	list-style: none;
+	line-height: 40px;
+}
+
+.longInput {
+	width: 600px;
+}
+
+.form textarea{
+	width: 600px;
+	height: 400px;
+	resize: none;
+}
+
+.form img{
+	width: 200px;
+}

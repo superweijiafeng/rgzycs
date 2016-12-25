@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans >
+    <form-bean name="loginForm" type="com.fjw.struts.form.LoginForm" />
+    <form-bean name="changePasswordForm" type="com.fjw.struts.form.ChangePasswordForm" />
+    <form-bean name="modifyForm" type="com.fjw.struts.form.ModifyForm" />
+    <form-bean name="addForm" type="com.fjw.struts.form.AddForm" />
+    <form-bean name="restoreFileForm" type="com.fjw.struts.form.RestoreFileForm" />
+    <form-bean name="restoreDatabaseForm" type="com.fjw.struts.form.RestoreDatabaseForm" />
+
+  </form-beans>
+
+  <global-exceptions />
+  <global-forwards >
+    <forward
+      name="goHome"
+      path="/nav.do?page=home"
+      redirect="true" />
+    <forward name="result" path="/WEB-INF/info.jsp" />
+
+  </global-forwards>
+
+  <action-mappings >
+    
+    <action
+      parameter="page"
+      path="/nav"
+      scope="request"
+      type="com.fjw.struts.action.NavAction"
+      validate="false"
+      cancellable="true">
+      <exception
+        key="1"
+        path="/index.jsp"
+        type="java.lang.NoSuchMethodException" />
+      <forward name="content" path="/WEB-INF/content.jsp" />
+      <forward name="home" path="/WEB-INF/home.jsp" />
+      <forward name="login" path="/WEB-INF/login.jsp" />
+      <forward name="changePassword" path="/WEB-INF/changePassword.jsp" />
+      <forward name="contact" path="/WEB-INF/contact.jsp" />
+      <forward name="goModify" path="/WEB-INF/goModify.jsp" />
+      <forward name="modify" path="/WEB-INF/modify.jsp" />
+      <forward name="goAdd" path="/WEB-INF/add.jsp" />
+      <forward name="goBackupAndRestore" path="/WEB-INF/backupAndRestore.jsp" />
+      
+    </action>
+    <action
+      attribute="loginForm"
+      input="/WEB-INF/login.jsp"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      type="com.fjw.struts.action.LoginAction"
+      validate="false"
+      cancellable="true">
+      <forward
+        name="home"
+        path="/nav.do?page=home"
+        redirect="true" />
+      <forward
+        name="login"
+        path="/nav.do?page=login"
+        redirect="true" />
+      <forward name="relogin" path="/WEB-INF/login.jsp" />
+      
+      
+    </action>
+    <action
+      attribute="changePasswordForm"
+      input="/WEB-INF/changePassword.jsp"
+      name="changePasswordForm"
+      path="/changePassword"
+      scope="request"
+      type="com.fjw.struts.action.ChangePasswordAction"
+      validate="false"
+      cancellable="true" >
+      <forward name="rechange" path="/WEB-INF/changePassword.jsp" />
+      
+      
+    </action>
+    <action
+      attribute="modifyForm"
+      input="/WEB-INF/modify.jsp"
+      name="modifyForm"
+      path="/modify"
+      scope="request"
+      type="com.fjw.struts.action.ModifyAction"
+      validate="false"
+      cancellable="true" >
+      
+    </action>
+    <action
+      attribute="addForm"
+      input="/WEB-INF/add.jsp"
+      name="addForm"
+      path="/add"
+      scope="request"
+      type="com.fjw.struts.action.AddAction"
+      validate="false"
+      cancellable="true" >
+      
+    </action>
+    <action
+      path="/del"
+      type="com.fjw.struts.action.DelAction"
+      validate="false"
+      cancellable="true" >
+      
+    </action>
+    <action
+      path="/backupFile"
+      type="com.fjw.struts.action.BackupFileAction"
+      validate="false"
+      cancellable="true" />
+    <action
+      path="/backupDatabase"
+      type="com.fjw.struts.action.BackupDatabaseAction"
+      validate="false"
+      cancellable="true" />
+    <action
+      attribute="restoreFileForm"
+      input="/WEB-INF/backupAndRestore.jsp"
+      name="restoreFileForm"
+      path="/restoreFile"
+      scope="request"
+      type="com.fjw.struts.action.RestoreFileAction"
+      validate="false"
+      cancellable="true" />
+    <action
+      attribute="restoreDatabaseForm"
+      name="restoreDatabaseForm"
+      path="/restoreDatabase"
+      scope="request"
+      type="com.fjw.struts.action.RestoreDatabaseAction"
+      validate="false"
+      cancellable="true" />
+    <action
+      path="/restoreDatabaseStructure"
+      type="com.fjw.struts.action.RestoreDatabaseStructureAction"
+      validate="false"
+      cancellable="true" />
+
+
+
+
+
+
+
+
+  </action-mappings>
+
+  <message-resources parameter="com.fjw.struts.ApplicationResources" />
+</struts-config>
+

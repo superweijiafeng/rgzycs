@@ -1,0 +1,10 @@
+.backup{
+	font-family: 微软雅黑;
+	font-size: 16px;
+	margin: 20px 0px;
+	border-bottom: 1px dotted #e0e0e0;
+}
+
+.backup a{
+	color: blue;
+}

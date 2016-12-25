@@ -1,0 +1,19 @@
+.goModifyTable, .goModifyTable th, .goModifyTable td{
+	margin: 0 auto;
+	margin-top: 20px;
+	border: 1px solid black;
+	width: 700px;
+	text-align: center;
+}
+
+.goModifyTable th{
+	height: 40px;
+}
+
+.goModifyTable tr{
+	height: 35px;
+}
+
+.goModifyTable a{
+	color: blue;
+}

@@ -1,0 +1,75 @@
+a{
+	color: inherit;
+	text-decoration: none;
+}
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.fontText1{
+	font-family: 'Microsoft Yahei','微软雅黑','宋体',Tahoma,sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.fontText2{
+	color: #eb3d00;
+	font-family: 微软雅黑;
+	font-size: 20px;
+}
+
+.fontText3{
+	color: #f0f0f0;
+	font-family: 微软雅黑;
+	font-size: 14px;
+}
+
+.fontText4{
+	font-family: 'Microsoft Yahei','微软雅黑','宋体',Tahoma,sans-serif;
+	font-size: 18px;
+	line-height: 36px;
+}
+
+.fontText5{
+	font-family: 微软雅黑;
+	color:blue;
+	font-size: 16px;
+}
+
+.fontText6{
+	font-family: 微软雅黑;
+	color:black;
+	font-size: 16px;
+}
+
+.fontCap1{
+	font-family: 微软雅黑;
+	font-size: 24px;
+	
+}
+
+.fontCap2{
+	font-family: "黑体";
+	font-weight: bolder;
+	font-size: 18px;
+}
+
+.fontCap3{
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+
+.fontCap4{
+	font-family: "黑体";
+	font-weight: bolder;
+	font-size: 20px;
+	color: #23b4f8;
+}
+
+.bodydiv {
+	width: 1000px;
+	margin: 0px auto;
+}
+
